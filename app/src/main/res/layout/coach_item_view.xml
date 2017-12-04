@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:id="@+id/ll_list_item"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:background="?attr/selectableItemBackground"
+    android:layout_height="@dimen/item_coach_heigth"
+    android:clickable="true"
+    >
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/ci_coach_image"
+        android:layout_width="0dp"
+        android:layout_height="@dimen/coach_avatar_heigth"
+        android:layout_marginLeft="@dimen/coach_avatar_margin_left"
+        android:layout_gravity="center_vertical"
+        android:layout_alignParentLeft="true"
+        android:layout_weight="1"
+        />
+
+    <TextView
+        android:id="@+id/tv_coach_name"
+        android:gravity="center_vertical"
+        android:textSize="@dimen/coach_name_text_size"
+        android:layout_marginLeft="@dimen/coach_name_margin"
+        android:text="@string/coach_text_dummy"
+        android:layout_width="0dp"
+        android:layout_weight="5"
+        android:layout_height="match_parent"/>
+    />
+
+</LinearLayout>
