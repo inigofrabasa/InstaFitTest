@@ -32,8 +32,8 @@
                 android:paddingTop="220dp"
                 android:paddingBottom="0dp"
                 android:layout_gravity="center|top"
-                android:layout_marginLeft="16dp"
-                android:layout_marginRight="16dp"
+                android:layout_marginLeft="@dimen/layout_image_margin"
+                android:layout_marginRight="@dimen/layout_image_margin"
                 android:gravity="center">
             </LinearLayout>
 
@@ -59,7 +59,20 @@
             android:orientation="vertical"
             >
 
+            <TextView
+                android:id="@+id/tv_coach_name"
+                android:background="@color/colorWhite"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/colorPrimary"
+                android:textAlignment="center"
+                android:padding="@dimen/coach_padding_text"
+                android:text="@string/coach_dummy_text"
+                android:textSize="@dimen/coach_tittle_fontsize"
+                />
+
             <WebView
+                android:paddingTop="@dimen/padding_top_description"
                 android:id="@+id/wb_coach_description"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent" />
@@ -84,28 +97,6 @@
         app:targetY="@dimen/margintoptoolbar_circleimageprofile"
         app:targetWidth="@dimen/width_circleimagetoolbar"
         app:targetHeight="@dimen/width_circleimagetoolbar"
-        />
-
-    <TextView
-        android:id="@+id/tv_coach_name"
-        android:text="CV"
-        android:textAlignment="center"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_gravity="center|top"
-        app:layout_behavior="com.zoonref.SimpleViewBehavior"
-        app:dependsOn="@+id/appBar"
-        android:layout_marginTop="@dimen/margintop_textprofile"
-        android:elevation="@dimen/elevation_circleimageprofile"
-        android:textSize="80dp"
-        android:textColor="@color/colorAccent"
-        app:dependType="y"
-        app:dependTargetY="@dimen/limitY_circleimage"
-        app:targetX="25dp"
-        app:targetY="@dimen/margintoptoolbar_circleimageprofile"
-        app:targetWidth="@dimen/width_circleimagetoolbar"
-        app:targetHeight="@dimen/width_circleimagetoolbar"
-        android:visibility="gone"
         />
 
 </android.support.design.widget.CoordinatorLayout>

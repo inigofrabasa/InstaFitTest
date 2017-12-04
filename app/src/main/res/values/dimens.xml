@@ -12,4 +12,8 @@
     <dimen name="margintoptoolbar_circleimageprofile">-1dp</dimen>
     <dimen name="width_circleimagetoolbar">16dp</dimen>
     <dimen name="margintop_textprofile">60dp</dimen>
+    <dimen name="coach_tittle_fontsize">20dp</dimen>
+    <dimen name="coach_padding_text">10dp</dimen>
+    <dimen name="padding_top_description">5dp</dimen>
+    <dimen name="layout_image_margin">16dp</dimen>
 </resources>
